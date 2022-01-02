@@ -1,0 +1,22 @@
+{
+    "name": "abrouter/symfony-abtest",
+    "description": "ABRouter Symfony AB test is a simple package for the base library to run ab-tests via ABRouter with Symfony. Prepare and run your ab-test in 10 minutes. Easy to manage and run. Can be also used as a feature flag or feature toggle. Available for free.",
+    "type": "library",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "symfony/framework-bundle": "^5.2",
+        "abrouter/abrouter-php-client": "^0.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Abrouter\\SymfonyClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Yatsenko",
+            "email": "abrouter@proxiedmail.com"
+        }
+    ]
+}

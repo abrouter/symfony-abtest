@@ -1,0 +1,35 @@
+services:
+  Abrouter\Client\Requests\RunExperimentRequest:
+    class: Abrouter\Client\Requests\RunExperimentRequest
+    autowire: true
+  Abrouter\Client\Builders\Payload\ExperimentRunPayloadBuilder:
+    class: Abrouter\Client\Builders\Payload\ExperimentRunPayloadBuilder
+    autowire: true
+  Abrouter\Client\Transformers\RunExperimentRequestTransformer:
+    class: Abrouter\Client\Transformers\RunExperimentRequestTransformer
+    autowire: true
+  Abrouter\Client\Config\Accessors\TokenConfigAccessor:
+    class: Abrouter\Client\Config\Accessors\TokenConfigAccessor
+    autowire: true
+  Abrouter\Client\Builders\RequestBuilder:
+    class: Abrouter\Client\Builders\RequestBuilder
+    autowire: true
+  Abrouter\Client\Builders\UrlBuilder:
+    class: Abrouter\Client\Builders\UrlBuilder
+    autowire: true
+  Abrouter\Client\Http\RequestExecutor:
+    class: Abrouter\Client\Http\RequestExecutor
+    autowire: true
+  Abrouter\Client\Config\Accessors\HostConfigAccessor:
+    class: Abrouter\Client\Config\Accessors\HostConfigAccessor
+    autowire: true
+  GuzzleHttp\Client:
+    class: GuzzleHttp\Client
+    autowire: true
+  Abrouter\Client\Manager\ExperimentManager:
+    class: Abrouter\Client\Manager\ExperimentManager
+    autowire: true
+  Abrouter\Client\Client: '@abrouter_client.client'
+  abrouter_client.client:
+    class: Abrouter\Client\Client
+    autowire: true
