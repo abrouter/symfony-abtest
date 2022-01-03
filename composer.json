@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": "^7.4 || ^8.0",
-        "symfony/framework-bundle": "^5.2",
+        "symfony/framework-bundle": "^5.2 || ^6.0",
         "abrouter/abrouter-php-client": "^0.4"
     },
     "license": "MIT",
