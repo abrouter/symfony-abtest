@@ -67,7 +67,7 @@ You can create an experiment and get your token and id of experiment on [ABRoute
 
 
 ## Example
-You can get an dockerized usage example by the following link: (https://github.com/abrouter/laravel-example)
+You can get an dockerized usage example by the following link: (https://github.com/abrouter/symfony-abtest-example)
 
 ## :wrench: Contributing
 
