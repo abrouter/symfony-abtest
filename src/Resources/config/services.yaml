@@ -2,11 +2,23 @@ services:
   Abrouter\Client\Requests\RunExperimentRequest:
     class: Abrouter\Client\Requests\RunExperimentRequest
     autowire: true
+  Abrouter\Client\Requests\SendEventRequest:
+    class: Abrouter\Client\Requests\SendEventRequest
+    autowire: true
+  Abrouter\Client\DTO\EventDTO:
+    class: Abrouter\Client\DTO\EventDTO
+    autowire: true
   Abrouter\Client\Builders\Payload\ExperimentRunPayloadBuilder:
     class: Abrouter\Client\Builders\Payload\ExperimentRunPayloadBuilder
     autowire: true
+  Abrouter\Client\Builders\Payload\EventSendPayloadBuilder:
+    class: Abrouter\Client\Builders\Payload\EventSendPayloadBuilder
+    autowire: true
   Abrouter\Client\Transformers\RunExperimentRequestTransformer:
     class: Abrouter\Client\Transformers\RunExperimentRequestTransformer
+    autowire: true
+  Abrouter\Client\Transformers\SendEventRequestTransformer:
+    class: Abrouter\Client\Transformers\SendEventRequestTransformer
     autowire: true
   Abrouter\Client\Config\Accessors\TokenConfigAccessor:
     class: Abrouter\Client\Config\Accessors\TokenConfigAccessor
@@ -28,6 +40,9 @@ services:
     autowire: true
   Abrouter\Client\Manager\ExperimentManager:
     class: Abrouter\Client\Manager\ExperimentManager
+    autowire: true
+  Abrouter\Client\Manager\StatisticsManager:
+    class: Abrouter\Client\Manager\StatisticsManager
     autowire: true
   Abrouter\Client\Client: '@abrouter_client.client'
   abrouter_client.client:
