@@ -5,6 +5,7 @@ namespace Abrouter\SymfonyClient\DependencyInjection;
 
 use Abrouter\Client\Config\Config;
 use Abrouter\Client\Manager\ExperimentManager;
+use Abrouter\Client\Manager\FeatureFlagManager;
 use Abrouter\Client\Manager\StatisticsManager;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
