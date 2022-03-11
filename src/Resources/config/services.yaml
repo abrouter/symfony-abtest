@@ -2,6 +2,9 @@ services:
   Abrouter\Client\Requests\RunExperimentRequest:
     class: Abrouter\Client\Requests\RunExperimentRequest
     autowire: true
+  Abrouter\Client\Requests\RunFeatureFlagRequest:
+    class: Abrouter\Client\Requests\RunFeatureFlagRequest
+    autowire: true
   Abrouter\Client\Requests\SendEventRequest:
     class: Abrouter\Client\Requests\SendEventRequest
     autowire: true
@@ -11,11 +14,17 @@ services:
   Abrouter\Client\Builders\Payload\ExperimentRunPayloadBuilder:
     class: Abrouter\Client\Builders\Payload\ExperimentRunPayloadBuilder
     autowire: true
+  Abrouter\Client\Builders\Payload\FeatureFlagRunPayloadBuilder:
+    class: Abrouter\Client\Builders\Payload\FeatureFlagRunPayloadBuilder
+    autowire: true
   Abrouter\Client\Builders\Payload\EventSendPayloadBuilder:
     class: Abrouter\Client\Builders\Payload\EventSendPayloadBuilder
     autowire: true
   Abrouter\Client\Transformers\RunExperimentRequestTransformer:
     class: Abrouter\Client\Transformers\RunExperimentRequestTransformer
+    autowire: true
+  Abrouter\Client\Transformers\RunFeatureFlagRequestTransformer:
+    class: Abrouter\Client\Transformers\RunFeatureFlagRequestTransformer
     autowire: true
   Abrouter\Client\Transformers\SendEventRequestTransformer:
     class: Abrouter\Client\Transformers\SendEventRequestTransformer
@@ -40,6 +49,9 @@ services:
     autowire: true
   Abrouter\Client\Manager\ExperimentManager:
     class: Abrouter\Client\Manager\ExperimentManager
+    autowire: true
+  Abrouter\Client\Manager\FeatureFlagManager:
+    class: Abrouter\Client\Manager\FeatureFlagManager
     autowire: true
   Abrouter\Client\Manager\StatisticsManager:
     class: Abrouter\Client\Manager\StatisticsManager
