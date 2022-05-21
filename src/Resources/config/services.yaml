@@ -8,16 +8,25 @@ services:
   Abrouter\Client\Requests\SendEventRequest:
     class: Abrouter\Client\Requests\SendEventRequest
     autowire: true
-  Abrouter\Client\DTO\EventDTO:
+  Abrouter\Client\DTO\BaseEventDTO:
     class: Abrouter\Client\DTO\EventDTO
     autowire: true
+  Abrouter\Client\DTO\IncrementEventDTO:
+      class: Abrouter\Client\DTO\EventDTO
+      autowire: true
+  Abrouter\Client\DTO\SummarizeEventDTO:
+      class: Abrouter\Client\DTO\EventDTO
+      autowire: true
   Abrouter\Client\Builders\Payload\ExperimentRunPayloadBuilder:
     class: Abrouter\Client\Builders\Payload\ExperimentRunPayloadBuilder
     autowire: true
   Abrouter\Client\Builders\Payload\FeatureFlagRunPayloadBuilder:
     class: Abrouter\Client\Builders\Payload\FeatureFlagRunPayloadBuilder
     autowire: true
-  Abrouter\Client\Builders\Payload\EventSendPayloadBuilder:
+  Abrouter\Client\Builders\Payload\SummarizePayloadBuilder:
+    class: Abrouter\Client\Builders\Payload\EventSendPayloadBuilder
+    autowire: true
+  Abrouter\Client\Builders\Payload\IncrementPayloadBuilder:
     class: Abrouter\Client\Builders\Payload\EventSendPayloadBuilder
     autowire: true
   Abrouter\Client\Transformers\RunExperimentRequestTransformer:
