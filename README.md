@@ -3,6 +3,9 @@
 ABRouter AB Test :construction_worker_woman: is a simple package for base library to run A/B tests via [ABRouter](https://abrouter.com) with Symfony.
 You can find base PHP library in https://github.com/abrouter/abrouter-php-client
 
+
+You're welcome to [visit the docs](https://docs.abrouter.com/docs/intro/).
+
 # What is the ABRouter service ?
 
 [ABRouter](https://abrouter.com) is the service to manage experiments(A/B split tests). The service provides easy to manage dashboard to keep experiments under control.
