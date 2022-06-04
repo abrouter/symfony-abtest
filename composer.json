@@ -5,7 +5,7 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "symfony/framework-bundle": "^5.2 || ^6.0",
-        "abrouter/abrouter-php-client": "^0.5"
+        "abrouter/abrouter-php-client": "^0.8"
     },
     "license": "MIT",
     "autoload": {
