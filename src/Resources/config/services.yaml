@@ -11,8 +11,8 @@ services:
   Abrouter\Client\DTO\BaseEventDTO:
     class: Abrouter\Client\DTO\BaseEventDTO
     autowire: true
-  Abrouter\Client\DTO\IncrementEventDTO:
-      class: Abrouter\Client\DTO\IncrementEventDTO
+  Abrouter\Client\DTO\IncrementalEventDTO:
+      class: Abrouter\Client\DTO\IncrementalEventDTO
       autowire: true
   Abrouter\Client\DTO\SummarizeEventDTO:
       class: Abrouter\Client\DTO\SummarizeEventDTO
